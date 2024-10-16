@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1778bedd;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+.cell:nth-child(odd) {
+    background-color: #e0f7fa; /* Light Blue for odd cells */
+}
+
+.cell:nth-child(even) {
+    background-color: #ffe0b2; /* Light Orange for even cells */
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.status {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.x {
+    color: blue; /* Color for X */
+}
+
+.o {
+    color: red; /* Color for O */
+}
